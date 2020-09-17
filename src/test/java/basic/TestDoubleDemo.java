@@ -3,7 +3,6 @@ package basic;
 import org.junit.Test;
 
 import java.math.BigDecimal;
-import java.util.Objects;
 
 /**
  * @author haipeng.wang
@@ -21,5 +20,8 @@ public class TestDoubleDemo {
         BigDecimal bigDecimal = new BigDecimal("299342432");
         bigDecimal.equals(bigDecimal);
     }
-
+    @Test
+    public void hahaTest(){
+        System.out.println(System.getProperty("java.io.tmpdir"));
+    }
 }
