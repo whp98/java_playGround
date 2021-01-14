@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author haipeng.wang
  * @version 1.0
- * @description: TODO
+ * @description: 车辆抓拍服务逻辑
  * @date 2020/11/28 11:23
  */
 public class ShootCarService {
@@ -22,19 +22,19 @@ public class ShootCarService {
         for (String carno : carNos) {
             for (shootCar car : shootCars) {
                 if (car.getCarNum().equals(carNos)) {
-                    if(car.getAdrId()==beginAddress) {
+                    if (car.getAdrId() == beginAddress) {
                         beg.put(carno, car.getShootTime().getTime());
                     }
-                    if(car.getAdrId()==endAddress){
-                        end.put(carno,car.getShootTime().getTime());
+                    if (car.getAdrId() == endAddress) {
+                        end.put(carno, car.getShootTime().getTime());
                     }
                 }
             }
         }
         int timesum = 0;
-        for (String carno : carNos){
-            timesum+=(end.get(carno)-beg.get(carno));
+        for (String carno : carNos) {
+            timesum += (end.get(carno) - beg.get(carno));
         }
-        return timesum/carNos.size();
+        return timesum / carNos.size();
     }
 }

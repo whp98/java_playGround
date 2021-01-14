@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * @author haipeng.wang
  * @version 1.0
- * @description: TODO
+ * @description: 抓拍车辆
  * @date 2020/11/28 11:21
  */
 

@@ -3,7 +3,7 @@ package constructor;
 /**
  * @author haipeng.wang
  * @version 1.0
- * @description: TODO
+ * @description: 父类
  * @date 2020/8/11 15:03
  */
 public class Father {
